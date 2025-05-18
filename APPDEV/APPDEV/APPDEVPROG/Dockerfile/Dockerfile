@@ -31,10 +31,10 @@ COPY --from=backend /app/backend ./BACKEND
 
 # Set environment variables
 ENV NODE_ENV=production
-ENV PORT=5000
+# PORT will be provided by Render at runtime
 
-# Expose the port for the application
-EXPOSE 5000
+# Expose the port for the application - will be overridden by Render
+EXPOSE 10000
 
 # Command to run the application
 CMD ["node", "BACKEND/server.js"] 
