@@ -3,7 +3,7 @@ services:
     name: lost-and-found-app
     env: docker
     repo: https://github.com/your-username/your-repo-name.git
-    dockerfilePath: ./Dockerfile.dockerfile
+    dockerfilePath: Dockerfile/Dockerfile
     envVars:
       - key: NODE_ENV
         value: production
